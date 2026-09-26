@@ -29,7 +29,6 @@ exports.register = async (req, res) => {
     res.status(201).json({ message: "admin created", data: newUser });
   } catch (error) {
     res.status(500).json({ message: "error", error: error.message });
-    throw error();
   }
 };
 
@@ -71,7 +70,6 @@ exports.login = async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({ message: "error", error: error.message });
-    throw error(error);
   }
 };
 
