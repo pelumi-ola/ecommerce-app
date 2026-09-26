@@ -7,7 +7,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const cors = require("cors");
 
 const app = express();
-
+//cors for production
 const corsOptions = {
   origin: ["https://ecommerce-app-1-5ra4.onrender.com"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
