@@ -9,7 +9,14 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: ["https://ecommerce-app-1-5ra4.onrender.com"],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 connectDB();
 
