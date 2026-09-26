@@ -10,7 +10,7 @@ const cors = require("cors");
 const app = express();
 
 const corsOptions = {
-  origin: ["https://ecommerce-app-1-5ra4.onrender.com"],
+  origin: ["https://ecommerce-app-3-67ki.onrender.com"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
